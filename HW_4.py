@@ -66,12 +66,12 @@ for item in range(0, 30):
     print('Step =', item)
     if item == 5:
         print('Item =', item)
-        if item == 10:
-            print('Item =', item)
-            if item < 4:
-                print('Item <', item)
-                if item >= 27:
-                    print('Item >=', item)
+    if item == 10:
+        print('Item =', item)
+    if item < 4:
+        print('Item <', item)
+    if item >= 27:
+        print('Item >=', item)
 # 12. Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до range_count +1
 # Тело цикла:
 # 12.1 Вывести в консоль (‘Step =’, item)
@@ -103,11 +103,8 @@ for item in range(0, range_count + 1):
 # 13.3 Выйти з if. Вывести в консоль (‘End_iteration =’, item)
 for item in range(0, 20):
     print('Step =', item)
-    if item >= 7 and item <= 12:
-        print('If_item =', item)
-        continue
+    if item >= 7:
+        if item <= 12:
+            print('If_item =', item)
+            continue
     print('End_iteration =', item)
-
-
-
-
